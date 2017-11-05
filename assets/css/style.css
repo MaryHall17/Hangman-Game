@@ -1,0 +1,35 @@
+/*Background color*/
+
+#background {
+	background-color:#FFF0F5;
+}
+
+/*Header image*/
+
+.img_responsive {
+	height:200px;
+	width: 600px;
+}
+
+/*Header*/
+#title {
+	font-family: 'Limelight', cursive;
+}
+
+/*Intructions*/
+#instructions {
+	font-family:'Abril Fatface', cursive;
+	font-size: 22px;
+}
+
+/*Guesses left*/
+#guessesLeft {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 22px;
+}
+
+/*Guessing Box*/
+#guessingBox {
+	border-width: medium;
+	border-style: dotted solid;
+}
