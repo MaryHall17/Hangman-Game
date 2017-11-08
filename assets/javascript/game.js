@@ -11,27 +11,14 @@ function randomizeWord () {
 	wordBlank (word);	
 };
 
-	// if (rockLegendsArray[0]) {
-	// 	document.getElementById("word").innerHTML = ("_ _ _ _ _ _" + " " + "_ _ _ _ _");
-	// } else if (rockLegendsArray[1]) {
-	// 	document.getElementById("word").innerHTML = ("_ _ _ _ _ _ _ _ _");
-	// } else if (rockLegendsArray[2]) {
-	// 	document.getElementById("word").innerHTML = ("_ _ _ _" + "_ _ _ _ _ _");
-	// } else if (rockLegendsArray[3]) {
-	// 	document.getElementById("word").innerHTML = ("_ _ _ _ _");
-	// } else if (rockLegendsArray[4]) {
-	// 	document.getElementById("word").innerHTML= ("_ _ _" + " " + "_ _ _ _ _");
-	// } else if (rockLegendsArray[5]) {
-	// 	document.getElementById("word").innerHTML = ("_ _ _ _ _ _");
-	// };
 //We display the names from the array as blanks by passing the names to the paramter word.
 function wordBlank (word) {
 	var transformWord = word;
 	for (i = 0; i < word.length; i++) {
 		transformWord = transformWord.replace(transformWord.charAt(i), "_");
 		//connection to event's local scope	
-		var letter = word.charAt(i);
-
+		// var letter = word.charAt(i);
+		// guessFunction (letter);
 		// console.log(word.replace(word.charAt(i),"_"))
 		// console.log(transformWord) //grab what we have done and get it to interact with rest of page "scoping issue"
 // 	var str = "Visit Microsoft!";
@@ -45,12 +32,25 @@ function wordBlank (word) {
 
 //onKeyEvent. If the user selects the correct key, the character will replace the blank.
 //If the user guesses incorrectly, the guesses left will tick down. 
- document.onkeyup = function(event) {
- 	var letter = String.forCharCode(event.keyCode).toLowerCase();
+function guessFunction(letter) {
+ 	var key = letter
+ 	var key = String.fromCharCode(event.keyCode).toLowerCase(letter);
  	for (i = 0; i < word.length; i++) {
- 		if (key=)
+ 		if (key == word.charAt(i)) {
+ 		document.getElementById("word").innerHTML = key;
+ 		} else if (key !== word.charAt(i)) {
+ 		document.getElementById("guessesLeft").innerHTML = guessesLeft--;
+ 		}
  	}
- }
+ };
+ // function guessLetter (letter) {
+ // 	var letter = String.fromCharCode(event.keyCode).toLowerCase();
+ // 	for (i = 0; i < word.length; i++) {
+ // 		if (letter = word.charAt(i)) {
+ // 			document.getElementById("word").innerHTML = letter;
+ // 		}
+ // 	}
+ // }
 // if (rockLegendsArray[0]) {
 // document.onkeyup = function(event) {
 // 	var letter = String.fromCharCode(event.keyCode).toLowerCase();
