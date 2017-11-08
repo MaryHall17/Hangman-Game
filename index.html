@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Limelight" rel="stylesheet">
 	<title>Hangman</title>
 </head>
-	<body id="background">
+	<body id="background" onload="randomizeWord()">
 
 		<!--Header-->
 
@@ -37,24 +37,33 @@
 			</div>
 			<div class="col-sm-4">
 				<p id="instructions">
-					Press any key to start guessing.
+					Press any key to start guessing. Lower case only.
 				</p>
 				<br>
-				<p id="word">
+				<p id="word" onload="wordBlank()">
 				</p>
 				<br>
-				<p id="lettersGuessed">
+				<h2 id="lettersGuessedHeader">Letters guessed:</h2>
+					<p id="lettersGuessed"></p>
+				<br>
+				<h2 id="guessesLeftHeader"> Guesses left: </h2>
+				 <p id="guessesLeft">
+				 	9
+				 </p>
 				</p>
 				<br>
-				<p id="guessesLeft">
-					Guesses left.
-				</p>
+				<h2 id="winsHeader">Wins:</h2>
+				 <p id="wins"></p>
+				<br>
+				<h2 id="lossesHeader"> Losses:</h2>
+				 <p id="losses"></p>
 			</div>
 			<div class="col-sm-4">
 			</div>
 		</div>
 	
 	<!--Link Javascript-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 	</body>
 </html>

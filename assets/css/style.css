@@ -19,13 +19,30 @@
 /*Intructions*/
 #instructions {
 	font-family:'Abril Fatface', cursive;
-	font-size: 22px;
+	font-size: 18px;
 }
 
-/*Guesses left*/
-#guessesLeft {
+/*Letters guessed*/
+#lettersGuessedHeader, #lettersGuessed {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 22px;
+	font-size: 18px;
+}
+/*Guesses left*/
+#guessesLeftHeader, #guessesLeft {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 18px;
+}
+
+/*wins*/
+#winsHeader, #wins {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 18px;
+}
+
+/*losses*/
+#lossesHeader, #losses {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 18px;
 }
 
 /*Guessing Box*/
